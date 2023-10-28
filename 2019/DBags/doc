@@ -1,0 +1,34 @@
+index1.html
+    Ready - Web Desktop 
+    Actual Webhost  
+
+index2.html
+    Ready - Iphone 4, Iphone 5
+            Desktop 1025<1280
+
+    Falta - 1280px
+            ([! Temporal fix ] puesto el .css original tamaño desktop en min-width 1280) en fuseboth.css
+    [!!!] Los elementos (grid de box 1 y 2) no responden al tamaño que se les asigna
+    [!!!] Ajustar para 400< devices - mirar con mozilla y otros
+
+
+
+## ESTRUCTURA CSS ##
+
+dbag.css 
+    Original - Iphone4
+    1 @media - 1025<1280
+
+fuseboth.css
+    Original - Iphone4
+    1 @media...
+    2 @media - Desktop >1280
+
+dbag2.css
+    Desktop (creado en >1280)
+
+
+
+
+## Problemas SOLUCIONADOS ##
+    width en vw, heigth en px para hacerlo responsible entre móviles

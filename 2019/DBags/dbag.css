@@ -1,0 +1,259 @@
+/** 
+@media default min 320 max 480
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  
+**/
+
+body {
+    font-family: Arial;
+    background: #f9f1db;
+    background-repeat:no-repeat;
+    z-index: 100;
+    margin: 0;
+    
+  }
+
+  
+  
+  /***  G R I D  ***/
+  .caja-all {
+    display: grid;
+    width: 100vw;
+    height: 900px;   
+    border-radius: 5px;
+  
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 15px 15px 15px;         
+    /* 
+    */
+    grid-template-rows: 1000px 150px;
+    grid-gap: 50px;
+  }
+  .caja1 { /* BOX1: LOGO + (DESCRIP-SUBMIT) */
+    background-color: red;
+    display: grid; /*Logo + Cuadro_submit*/
+    grid-template-rows: 350px 600px ;
+    grid-template-areas: 
+    "minicaja1"
+    "minicaja2";  
+  }
+  .caja1 h1 {
+    align-self: center;
+  }
+    .minicaja1 {
+        grid-area: minicaja1;
+    }
+    .minicaja2 { /* DESCRIP + SUBMIT */
+        display: grid;
+        background-color: #D8BFBF;
+        grid-area: minicaja2;
+        width: 80vw;
+        height: 730px;
+        margin-right: auto;
+        margin-left: auto;
+
+        
+        box-shadow: 0 0 26px rgba(0,0,0,0.5);
+        align-self: center;
+        border-radius: 30px 15px 30px 15px;
+        padding: 15px;
+                          /* Texto_pre-submit & Submit */
+        grid-template-rows: 480px 160px ; /* Mirar heigh de minicaja2*/
+        grid-gap: 45px;
+        grid-template-areas: 
+        "microcaja1"
+        "microcaja2";
+    }
+        .microcaja1 {
+            grid-area: microcaja1;
+            font-size: 3.5rem;
+            font-weight: bold;
+            padding: 15px 15px 0px 15px;
+            
+        }
+        .microcaja2 {
+            grid-area: microcaja2;
+            padding-top: 90px;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        /* .microcaja3 {
+            grid-area: microcaja3;
+        } */
+  
+  .caja2 {
+    display: grid;
+    background-color: #67CDF8;   
+    font-size: 2.7rem;
+    font-style: italic;
+    font-weight: bold;
+    padding: 30px 30px 0px 30px;
+    justify-items: center;
+    height: 400px;
+    
+    
+  
+  }
+  
+     
+  
+  .caja1 { /* Box Logo */
+    background-image: url("img/alim1.jpg");
+                    
+  }
+  
+  .minicaja1 img { /** LOGO **/
+    position: absolute;
+    width: 76vw;
+    padding: 15px;
+    z-index: 1001;
+    filter: drop-shadow(5px 5px 5px #222);
+    
+  }
+  .logo-fondo {
+    position: absolute;
+    
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+  
+    width: 450px;
+    height: 180px;
+    filter: blur(2px);
+    z-index: 1000;
+  }
+  
+  input[type=email], input[type=submit] {
+    display: inline;
+  }
+  input[type=email] {
+    width: 32vw;
+    height: 70px;
+    margin-bottom: -20px;
+    font-style:italic;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 2.5rem;
+    border: 5px #67CDF8 solid;
+    padding: -2px; /* Quita el 'borde' blanco por fuera del borde*/
+  }
+  
+  input[type=submit] {
+    background-color: #F2873A;
+    border: 1.5px #EB5757 solid;
+    border-radius: 10px;
+    width: 20vw;
+    height: 100px;
+  
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  
+  .footer-afiliados {
+    float: left;
+    font-size: 1.5rem;
+  
+  }
+  
+
+  #facebook-icon {
+  background: #3b5998;
+  text-indent: -999em;
+  width: 100px;
+  height: 110px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 15px solid #3b5998;
+  border-bottom: 0;
+  
+  float: right;
+  margin-top: 30px;
+  margin-right: 60px;
+  filter: drop-shadow(5px 5px 5px #222);
+  z-index: 101;
+  }
+  
+  #facebook-icon::before {
+    background: #3b5998;
+    content: "/20";
+    position: absolute;
+    bottom: -30px;
+    right: -37px;
+    width: 40px;
+    height: 90px;
+    border: 20px solid #eee;
+    border-radius: 25px;
+  }
+  #facebook-icon::after {
+    background: #eee;
+    content: "/20";
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    width: 55px;
+    height: 20px;
+  }
+
+ /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .caja1 { /* BOX1: LOGO + (DESCRIP-SUBMIT) */
+    background-color: red;
+    display: grid; /*Logo + Cuadro_submit*/
+    grid-template-rows: 380px 400px ;
+    grid-template-areas: 
+    "minicaja1"
+    "minicaja2";  
+  }
+  .caja1 h1 {
+    align-self: center;
+  }
+    .minicaja1 {
+        grid-area: minicaja1;
+    }
+    .minicaja2 { /* DESCRIP + SUBMIT */
+
+        width: 70vw;
+        height: 520px;
+        padding: 15px;
+                          /* Texto_pre-submit & Submit */
+        grid-template-rows: 250px 160px ; /* Mirar heigh de minicaja2*/
+        grid-gap: 20px;
+    }
+      .microcaja1 {
+          grid-area: microcaja1;
+          font-size: 2.2rem;
+          font-weight: bold;
+          padding: 20px 20px 0px 20px;      
+      }
+      
+    input[type=email] {
+      width: 30vw;
+      height: 60px;
+      font-size: 2rem;
+      border: 6px #67CDF8 solid;
+      padding: -7px; /* Quita el 'borde' blanco por fuera del borde*/
+    }
+    
+    input[type=submit] {
+      background-color: #F2873A;
+      border: 1.5px #EB5757 solid;
+      border-radius: 10px;
+      width: 19vw;
+      height: 110px;
+      font-size: 2rem;
+    }
+    .caja2 {
+      font-size: 2rem;
+    }
+}

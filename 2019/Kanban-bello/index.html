@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>Bello's Kanban</title>
+    <link rel="stylesheet" type="text/css" href="kanban.css">
+
+    <script>
+        function allowDrop(ev) { 
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.acts').addEventListener('dragstart', drag)
+        })
+    </script>
+    
+</head>
+<body>
+
+<div class="item-all">
+    <div class="area-A">
+        <div class="item1"><p>Tareas</p></div>
+        <div class="item2"><p>En espera</p></div>
+        <div class="item3"><p>En curso</p></div>
+        <div class="item4"><p>Terminado</p></div>
+    </div>
+
+    <div class="area-B" >
+        <div class="item5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="item6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="item7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="item8" ondrop="drop(event)" ondragover="allowDrop(event)"></div> 
+        <div class="ghost"><div class='relleno'></div></div>    
+    </div>
+
+    <div class="area-C">
+        <div id="draggable1" class="act1" draggable="true" ondragstart="drag(event)">
+        <p>Doing Stuff</p></div>
+        <div id="draggable2" class="act2" draggable="true" ondragstart="drag(event)">
+        <p>Khan</p></div>
+        <div id="draggable3" class="act3" draggable="true" ondragstart="drag(event)">
+        <p>Disolver</p></div>
+        <div id="draggable4" class="act4" draggable="true" ondragstart="drag(event)">
+        <p></p></div>
+        <div id="draggable5" class="act5" draggable="true" ondragstart="drag(event)"></div>
+    </div>
+</div>
+
+</body>
+</html>

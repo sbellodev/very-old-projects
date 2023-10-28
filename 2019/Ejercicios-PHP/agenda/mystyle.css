@@ -1,0 +1,122 @@
+/* BODY - CELDAS: Encabezado, cuerpo y celdas del cuerpo. */
+
+.instrucciones {
+    position: relative;
+    top: 400px;
+}
+
+body {
+
+    background-color: aqua;
+
+}
+
+#test {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px ridge black;
+    background-color: red;
+    position: absolute;
+    top: 82px;
+    left: 320px;
+    z-index: 8;
+    width: 187px;
+
+}
+
+#encabezado {
+    border: 2px ridge black;
+    background-color: #D99339;
+    margin: 3px;
+}
+
+#cuerpo {
+    border: 2px ridge black;
+    background-color: #FFE4DC;     
+}
+
+.celda {
+    padding: 5px;
+}
+
+
+/* Cuadrado gigante */ 
+#cuadrado {
+    width: 492.5px;
+    height: 312px;
+    border-style: dashed;
+    position: absolute;
+    background-color: bisque;
+    top: 50px;
+    left: 50px;
+    z-index:7;
+}
+
+
+/* Formulario para insertar Nombre, Teléfono y enviar */
+.formu {
+    position: absolute;
+    z-index: 8;
+    top: 67px;
+    left: 90px;   
+}
+
+
+.formu p {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-style: italic;
+    border-width: -20px;
+    margin-bottom: 5px; 
+}
+
+.formu h3 {
+    font-size: 20px;
+    font-style: bold;
+    font-variant: small-caps;
+    margin-bottom: 30px;
+}
+
+.formu input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-top: -40px;
+    width: 80px;
+    position:absolute;            
+}
+
+.formu input[type="submit"] {
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 8px;
+    outline: none;
+    font-size: 10px;
+    font-weight: bold;
+    width: 70px;
+    height: 33px;
+    background: linear-gradient(to bottom, #d16c35, #c76235);
+}
+
+
+/* Miscelánea - Mensaje de advertencia */
+#adv {
+    top: 275px;
+    left: 92px;
+    z-index: 8;
+    position: absolute;
+    font-weight: bold;
+    color: coral;
+    font-size: 15px;
+    font-family: "Arial Black";
+    margin-top: -4px;            
+}
+
+#adv #error {
+    letter-spacing: 2px;
+}
+
+#adv #datos {
+    margin-top: -15px;
+}
+        
+        

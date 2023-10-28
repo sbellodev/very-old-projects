@@ -1,0 +1,83 @@
+#all-index {
+    border-style: none;
+    display: flex;
+    width: 400px;
+    height: 30px;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+#btn-index1, #btn-index2, #btn-index3, #btn-index4, #btn-index5 {
+    background-color: #7FFFD4;
+}
+
+/** Both Tables **/
+#both-tables {
+	padding-top: 15px;
+}
+
+.both-tables-cl, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+/** Table **/
+#all-table {
+    position: relative;
+    float: left;
+}
+
+/** Table DELETE **/
+#btn-del {
+    height: 50px;   
+}
+
+#btn-del #per-btn-del {
+    position: relative;
+    margin: -1px;
+}
+
+#per-btn-del {
+    height: 20.4px;
+    left: 33.33%;
+}
+
+/*** BUTTONS SELECT ***/
+/*** All buttons in a DIV ***/
+.btn-select {
+    background-color: #80ccff;
+}
+
+/*** 3 first buttons ***/
+#change-btns1 {
+    position:relative;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+/*** 2 next buttons ***/
+#change-btns2 {
+	background-color: blue;
+    position:relative;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#btn-select1, #btn-select2, #btn-select3 {
+    background-color: #80ccff;
+    flex-direction: row;
+	border-radius: 8px;
+}
+
+#btn-select4, #btn-select5 {
+	background-color: #ff3333;
+}
+#btn-select4 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}

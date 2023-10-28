@@ -1,0 +1,30 @@
+<?php
+
+include 'conection.php';
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystylei.css">
+<style>
+    #btn-index1 {
+        background-color: #FFA500;
+    }
+</style>
+<title> Proyecto Artigo </title>
+
+</head>
+<body>
+	<p>  </p><br>
+    <h3> Index ARTIGO </h3>
+    <div id = "all-index">
+        <input id="btn-index1" type="button" onclick="location.href='index.html';" value="INDEX"/>
+        <input id="btn-index2" type="button" onclick="location.href='UnoSELECT.php';" value="SELECT AND DELETE"/>
+        <input id="btn-index3" type="button" onclick="location.href='UnoINSERT.php';" value="INSERT"/>
+        <input id="btn-index4" type="button" onclick="location.href='UnoMODIFY.php';" value="MODIFY"/>
+        <input id='btn-index5' type="button" onclick="location.href='UnoOPTION.php';" value="OPTION"/>
+    </div>   
+    <div id = "db1"></div> 
+</body>
+</html>

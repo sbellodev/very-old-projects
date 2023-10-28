@@ -1,0 +1,7 @@
+Github
+https://github.com/debello/php.exercise/tree/master/sql/Uno
+
+
+Notas 
+	* Para crear la base de datos usar el contenido de 'uno_DB.php'
+	* Abrir en index.html

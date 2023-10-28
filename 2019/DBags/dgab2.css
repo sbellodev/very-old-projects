@@ -1,0 +1,268 @@
+body {
+  font-family: Arial;
+  background: #f9f1db;
+  background-repeat:no-repeat;
+  z-index: 100;
+}
+.flexbox1 {
+  display: flex;
+  justify-content: row;
+  font-weight: bold;
+  height: 400px;
+  justify-content: flex-end;
+  padding-right: 20px;
+  list-style: none;
+}
+.flexbox1 li {
+  
+  margin-left: 25px;
+  
+
+}
+
+
+/***  G R I D  ***/
+.caja-all {
+  display: grid;
+  width: 100%;
+  height: 1000px;   
+  border-radius: 5px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px 15px 15px 15px;         
+  /* 
+  */
+  grid-template-rows: 700px 150px;
+  grid-gap: 50px;
+}
+.caja1 {
+  background-color: red;
+  display: grid; /*Centramos el cuadrado azul segun px del row*/
+  grid-template-rows: 60px 640px ;
+  grid-template-areas: 
+  "minicaja1"
+  "minicaja2";  
+}
+.caja1 h1 {
+  align-self: center;
+}
+  .minicaja1 {
+      grid-area: minicaja1;
+  }
+  .minicaja2 { /* Cuadro céntrico Infórmate sobre... + mail y submit */
+      display: grid;
+      background-color: #D8BFBF;
+      grid-area: minicaja2;
+      width: 450px;
+      height: 400px;
+      margin-right: auto;
+      margin-left: auto;
+      
+      box-shadow: 0 0 26px rgba(0,0,0,0.5);
+      align-self: center;
+      border-radius: 30px 15px 30px 15px;
+      padding: 15px;
+
+      grid-template-rows: 280px 150px ; /* Mirar heigh de minicaja2*/
+      grid-gap: 45px;
+      grid-template-areas: 
+      "microcaja1"
+      "microcaja2";
+  }
+      .microcaja1 {
+          grid-area: microcaja1;
+          font-size: 28px;
+          font-weight: bold;
+          padding: 15px 15px 0px 15px;
+          
+      }
+      .microcaja2 {
+          grid-area: microcaja2;
+          align-items: center;
+          margin-right: auto;
+          margin-left: auto;
+      }
+      /* .microcaja3 {
+          grid-area: microcaja3;
+      } */
+
+.caja2 {
+  display: grid;
+  background-color: #67CDF8;   
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 15px 15px 0px 15px;
+  justify-items: center;
+  
+  
+
+}
+
+
+
+
+
+/* .caja3 {
+  background-color: blue;
+
+}
+.caja4 {
+  background-color: orange;
+
+} 
+*/
+
+/***  S T Y L E ***/
+
+/* Después de 1300 se duplica la imagen original */
+@media only screen and (max-width: 1000px) {
+  .caja1 {
+  background-image: url("img/alim1-cortada1.jpg");
+  background-size: 1000px 765px; /*test 'cover', default 1000px 765px*/
+  }
+}
+.caja1 { /* Logo */
+  background-image: url("img/alim1.jpg");
+                  
+}
+
+.minicaja1 img { /** LOGO **/
+  position: absolute;
+  width: 450px;
+  padding: 15px;
+  z-index: 1001;
+  filter: drop-shadow(5px 5px 5px #222);
+  
+}
+.logo-fondo {
+  position: absolute;
+  
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+
+  width: 450px;
+  height: 180px;
+  filter: blur(2px);
+  z-index: 1000;
+}
+
+input[type=email], input[type=submit] {
+  display: inline;
+}
+input[type=email] {
+  width: 180px;
+  height: 30px;
+  margin-bottom: -20px;
+  font-style:italic;
+  text-align: center;
+  margin-right: 20px;
+}
+
+input[type=submit] {
+  background-color: #F2873A;
+  border: 1.5px #EB5757 solid;
+  border-radius: 10px;
+  width: 120px;
+  height: 50px;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-afiliados {
+  float: left;
+  font-size: 12px;
+
+}
+
+/* Style all font awesome icons
+#social-buttons {
+  display: flex;
+  justify-content: center;
+
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;
+
+}
+
+
+.fa:hover {
+opacity: 0.9;
+}
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  }
+#social-buttons {
+  display: grid;
+  align-self: right;
+  align-items: right;
+  justify-content: end;
+  padding-right: 20px;
+  padding-top: 20px;
+  
+}
+
+Twitter 
+.fa-facebook {
+background: #55ACEE;
+color: white;
+box-shadow: 0 0 26px rgba(0,0,0,0.5);
+} */
+
+
+/* body {
+margin: 35px auto;
+text-align: center;
+display: block;
+} */
+
+/** Facebook icon **/
+#facebook-icon {
+background: #3b5998;
+text-indent: -999em;
+width: 100px;
+height: 110px;
+border-radius: 5px;
+position: relative;
+overflow: hidden;
+border: 15px solid #3b5998;
+border-bottom: 0;
+float: right;
+margin-top: 30px;
+margin-right: 60px;
+filter: drop-shadow(5px 5px 5px #222);
+z-index: 101;
+}
+
+#facebook-icon::before {
+  background: #3b5998;
+  content: "/20";
+  position: absolute;
+  bottom: -30px;
+  right: -37px;
+  width: 40px;
+  height: 90px;
+  border: 20px solid #eee;
+  border-radius: 25px;
+}
+#facebook-icon::after {
+  background: #eee;
+  content: "/20";
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  width: 55px;
+  height: 20px;
+}

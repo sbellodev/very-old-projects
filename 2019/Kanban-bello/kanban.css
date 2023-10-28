@@ -1,0 +1,122 @@
+.item-all {
+    /* background-color: red; */
+    display: grid;
+    width: 100%;
+    height: 1200px;
+    /* grid-template-columns: repeat(4, 200px) 0px; */
+    /* grid-template-rows: 100px repeat(3, 280fr); */
+    grid-template-columns: 1000px;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas:
+    "areaA"
+    "areaB"
+    "areaC";
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    justify-content: space-around; 
+       
+    }
+    .area-A {
+        grid-area: areaA;
+        display: grid; 
+        grid-template-columns: repeat(4, 200px) 0px;
+        grid-template-areas:
+        "i1 i2 i3 i4";
+        justify-content: space-around;
+        }
+        .ghost {
+            grid-area: ghostB;
+        }
+        .relleno {
+            width: 150px;
+            height: 250px;
+        }
+        .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8 {
+            border-radius: 15px;
+        }
+        .item1 {
+            background-color: cornflowerblue;
+            grid-area: i1;    
+        }
+        .item2 {
+            background-color: cornflowerblue;
+            grid-area: i2;   
+        }
+        .item3 {
+            background-color: cornflowerblue;
+            grid-area: i3;   
+        }
+        .item4 {
+            background-color: cornflowerblue;
+            grid-area: i4;    
+        }
+    
+    .area-B {
+        grid-area: areaB;
+        display: grid; 
+        grid-template-columns: repeat(4, 200px) 0px;
+        grid-template-rows: 1fr 0px;
+        grid-template-areas:
+        "i5 i6 i7 i8 ghostB"
+        "i5 i6 i7 i8 ghostB"
+        "i5 i6 i7 i8 ghostB"
+        "i5 i6 i7 i8 ghostB"; /* Introducir Ghost B*/
+        justify-content: space-around;
+        }
+        .item5 {
+            background-color: aquamarine;
+            grid-area: i5;    
+        }
+        .item6 {
+            background-color: aquamarine;
+            grid-area: i6;
+        }
+        .item7 {
+            background-color: aquamarine; 
+            grid-area: i7;
+        }
+        .item8 {
+            background-color: aquamarine; 
+            grid-area: i8; 
+        }
+
+/* Actividades */
+    .area-C {
+        grid-area: areaC;
+        display: inline-block;
+        margin-top: 20px;
+        }
+        .act1, .act2, .act3, .act4, .act5, .act6 {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .act1 {
+            background-color: green;
+        }
+        .act2 {
+            background-color:yellow;
+        }
+        .act3 {
+            background-color:orange ;
+        }
+        .act4 {
+            background-color: black;
+        }
+        .act5 {
+            background-color:darkgrey;
+        }
+
+/* Style */
+.area-A p {
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.area-B p, .area-C p {
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
