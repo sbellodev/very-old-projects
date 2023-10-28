@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santi Bello</title>
+    <style>
+        @font-face {
+            font-family: 'DTMMono';
+            src: url("./fonts_src/DeterminationSansWeb.ttf") format('truetype');
+        }
+        @font-face {
+            font-family: 'EndlessBoss';
+            src: url("./fonts_src/EndlessBossBattle.ttf") format('truetype');
+        }
+
+        body {
+            background-color: black;
+            font-family: 'DTMMono', monospace;
+            color: white;
+        }
+        p {
+            padding: 0;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 36px;
+        }
+        img {
+            width: 30px;
+        }
+
+        .content {
+            letter-spacing: 1px;
+            padding: 40px 20px;
+        }
+        
+        .portada {
+            letter-spacing: 2px;
+        }
+        
+        .portada h1 {
+            font-family: 'EndlessBoss', monospace;
+            font-size: 80px;
+        }
+        /* Destrezas*/
+        .skills {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            max-width: 200px;
+        }
+
+        /* Skills */
+        .skills p {
+            margin: 0;
+            flex: 1;
+            font-weight: bold;
+        }
+
+        /* Heart icons */
+        .hearts {
+            display: flex;
+            gap: 5px;
+        }
+
+        .hearts img {
+            width: 20px; /* Adjust the width as needed */
+            max-width:20px;
+            max-height:20px;
+            height: auto;
+        }
+
+        /* Arrows */
+        .arrow {
+            max-width: 30px;
+            display: block;
+            margin: 0 auto;
+        }
+        .left-column, .right-column {
+            padding: 6px;
+        }
+        .left-column {
+            float: left;
+        }
+        .right-column {
+            float: right;
+        }
+            
+    </style>
+</head>
+<body >
+        <nav>
+            <div class="left-column">
+                <img id="left-arrow" class="arrow" src="./img/left-arrow.png" alt="flecha izquierda">
+            </div>
+            <div class="right-column">
+                <img id="right-arrow" class="arrow" src="./img/right-arrow.png" alt="flecha derecha">
+            </div>
+        </nav>
+        <div class="content">
+            <div class="portada">
+                <h1>SANTI BELLO</h1>
+                <br/><br/><br/><br/>
+                    <h2>Desarrollador Frontend</h2>
+                    <h2>{React.js}</h2>
+            </div>
+            <div class="descripcion" style="display: none;">
+                <p>Soy un estudiante <span>autodidacta</span> gallego.</p>
+                <p>Dos años atrás empecé a trastear Java después de verle las 'tripas' a un videojuego, lo que me 
+                llevaría a descubrir el desarrollo Web.</p>
+                <p>Me encantó poder <span>marcar la diferencia</span> mediante código y un objetivo.</p>
+                <img src="./img/corazon-rojo.png" alt="corazón rojo" />
+                <p>Busco un lugar interesante donde pueda seguir formándome y abrirme a nuevos desafíos.</p>
+                <br/>
+                <p>Me considero <span>responsable</span>, organizado, trabajo en equipo y social, habiendo participado en 
+                la planificación y ejecución de más de <span>140 eventos</span> de ocio a nivel regional.</p>
+                <br/>
+                <p>Para cualquier duda, puesta a prueba (o saludarme!) contáctame vía email o twitter.</p>
+            </div>
+            <div class="destrezas" style="display: none;">
+                <h2>Destreza</h2>
+                <!-- Inside the "destrezas" section -->
+                <div class="lista">
+                    <div class="skills">
+                        <p>JS React</p>
+                        <div class="hearts">
+                            <img src="./img/corazon-verde.png" alt="corazón verde" />
+                            <img src="./img/corazon-verde.png" alt="corazón verde" />
+                            <img src="./img/corazon-verde.png" alt="corazón verde" />
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p>CSS</p>
+                        <div class="hearts">
+                            <img src="./img/corazon-amarillo.png" alt="corazón amarillo" />
+                            <img src="./img/corazon-amarillo.png" alt="corazón amarillo" />
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p>PHP</p>
+                        <div class="hearts">
+                            <img src="./img/corazon-rojo.png" alt="corazón rojo" />
+                            <img src="./img/corazon-rojo.png" alt="corazón rojo" />
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p>Bootstrap</p>
+                        <div class="hearts">
+                            <img src="./img/corazon-violeta.png" alt="corazón violeta" />
+                            <img src="./img/corazon-violeta.png" alt="corazón violeta" />
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p>Java</p>
+                        <div class="hearts">
+                            <img src="./img/corazon-azul.png" alt="corazón azul" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="proyectos" style="display: none;">
+                <div class="lista">
+                    <h2>Experiencia y Contribuciones</h2>
+                    <section>
+                        <p><span>Actual!</span> - 9 meses contribuyendo en <a href="https://smashbrosspain.com" rel="noopener noreferrer">Smashbrosspain</a></p>
+                        <p><span>Actual!</span> - Organizador de eventos de ocio en<a href="http://gamingtroop.es/" rel="noopener noreferrer"> Gaming Troop</a></p>
+                        <p>2 meses trabajando en Diariomotor</p>
+                    </section>
+                    <br/>
+                    <h2>Proyectos</h2>
+                    <section>
+                        <p><a href="https://sbellodev.github.io/Nueva-web/" rel="noopener noreferrer">Este portafolio</a></p>
+                        <p><a href="https://sbellodev.github.io/todolist/" rel="noopener noreferrer">To do List</a>(Antiguo)</p>
+                        <p><a href="https://sbellodev.github.io/kanban_bello/" rel="noopener noreferrer">Kanban</a>(Antiguo)</p>
+                        <p><a href="https://github.com/sbellodev/API-Clima" rel="noopener noreferrer">API Clima</a>(Antiguo)</p>
+                        <p><a href="https://github.com/sbellodev?tab=repositories" rel="noopener noreferrer">Mi Github</a></p>
+                    </section>
+                </div>
+            </div>
+            <div class="pie" style="display: none;">
+                <div class="contacto">
+                    <h2>Redes Sociales</h2>
+                    <div class="rrss">
+                        <a href="https://github.com/sbellodev/" rel="noopener noreferrer">
+                            <img src="./img/icono-github.png" alt="icono de Github" />
+                        </a>
+                    </div>
+                    <h2>Correo</h2>
+                    <p>sbellodev@gmail.com</p>
+                </div>
+                <div class="disclaimer">
+                    <div>
+                        <img alt="corazon verde" src="./img/corazon-verde.png" />
+                        <img alt="corazon amarillo" src="./img/corazon-amarillo.png" />
+                        <img alt="corazon rojo" src="./img/corazon-rojo.png" />
+                        <img alt="corazon violeta" src="./img/corazon-violeta.png" />
+                        <img alt="corazon azul" src="./img/corazon-azul.png" />
+                    </div>
+                    <p>Font and theme inspired by Undertale - Toby Fox.</p>
+                    <p>© Santi Bello - 2/2/2019</p>
+                </div>
+            </div>
+        </div>
+            <!-- Your content here -->
+            <!-- You can use JavaScript to toggle the content based on the count state -->
+
+
+    <!-- JavaScript (React) goes here -->
+</body>
+    <script type="text/javascript">
+        // Initialize a variable to keep track of the current section
+        let currentSection = 0;
+        const sections = document.querySelectorAll(".content > div");
+
+        // Function to show/hide sections
+        function showSection(sectionIndex) {
+            sections[currentSection].style.display = "none";
+            sections[sectionIndex].style.display = "block";
+            currentSection = sectionIndex;
+        }
+
+        // Attach click event handlers to the arrows
+        const leftArrow = document.getElementById("left-arrow");
+        const rightArrow = document.getElementById("right-arrow");
+
+        leftArrow.addEventListener("click", () => {
+            console.log("left click")
+            const prevSection = (currentSection - 1 + sections.length) % (sections.length);
+            showSection(prevSection);
+        });
+
+        rightArrow.addEventListener("click", () => {
+            console.log("right click")
+            const nextSection = (currentSection + 1) % (sections.length);
+            showSection(nextSection);
+        });
+
+        showSection(currentSection);
+    </script>
+</html>
